@@ -1,10 +1,15 @@
 package com.project.cernac.mrcernac;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.project.cernac.mrcernac.utils.Prefs;
 
@@ -13,9 +18,6 @@ import static java.lang.String.valueOf;
 public class Home extends AppCompatActivity {
 
     private Prefs prefs = null;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +46,11 @@ public class Home extends AppCompatActivity {
 
 
 
-
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-
     }
 }
+
+
+/* /////////////// WEBVIEWS//////////////////
+        WebView webTest = findViewById(R.id.webTest);
+        webTest.setWebViewClient(new WebViewClient());
+        webTest.loadUrl("https://www.pokepedia.fr/Salam%C3%A8che");*/
