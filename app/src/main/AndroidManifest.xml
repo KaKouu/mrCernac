@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.project.cernac.mrcernac" >
+    package="com.project.cernac.mrcernac">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,8 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_crab"
         android:supportsRtl="true"
-        android:theme="@style/CernacTheme" >
-        <activity android:name=".Home" >
+        android:theme="@style/CernacTheme">
+        <activity android:name=".introductionLevel"></activity>
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,5 +1,6 @@
 package com.project.cernac.mrcernac;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -34,7 +35,29 @@ public class Home extends AppCompatActivity {
     }
 
     private void chooseLevel(int actualLevels) {
-        //TODO
+
+
+
+
+        switch (actualLevels){
+            case 0 :
+                Class<introductionLevel> level0 = introductionLevel.class;
+                chooseActivity(level0);
+                break;
+            case 1:
+
+                break;
+            default: System.out.println("ERROR");
+                break;
+        }
+
+
+
+        }
+
+    private void chooseActivity(Class level) {
+        Intent intent = new Intent(Home.this, level);
+        startActivity(intent);
 
     }
 }
