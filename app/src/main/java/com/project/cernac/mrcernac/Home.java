@@ -1,6 +1,5 @@
 package com.project.cernac.mrcernac;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +20,7 @@ public class Home extends AppCompatActivity {
         prefs = new Prefs(this);
         final int actualLevels = prefs.getLevel();
 
+
         Button start = findViewById(R.id.startButton);
 
         start.setOnClickListener(new View.OnClickListener() {
@@ -35,13 +35,10 @@ public class Home extends AppCompatActivity {
     }
 
     private void chooseLevel(int actualLevels) {
-
-
-
-
+        actualLevels =0;
         switch (actualLevels){
             case 0 :
-                Class<introductionLevel> level0 = introductionLevel.class;
+                Class<IntroductionLevel> level0 = IntroductionLevel.class;
                 chooseActivity(level0);
                 break;
             case 1:

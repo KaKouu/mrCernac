@@ -3,4 +3,7 @@
     <color name="YellowColorPrimary">#fdc10c</color>
     <color name="YellowColorPrimaryDark">#c4960b</color>
     <color name="RedCrab">#FD0001</color>
+    <color name="YellowBeach">#EBE4CD</color>
+    <color name="Black">#000000</color>
+
 </resources>

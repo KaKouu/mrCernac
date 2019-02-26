@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_crab"
         android:supportsRtl="true"
         android:theme="@style/CernacTheme">
-        <activity android:name=".introductionLevel"></activity>
+        <activity android:name=".LanguageLevel"></activity>
+        <activity android:name=".IntroductionLevel" />
         <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
