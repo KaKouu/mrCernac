@@ -31,7 +31,7 @@ public class LanguageLevel extends AppCompatActivity {
 
                 level1.finish();
 
-                Intent intent = new Intent(LanguageLevel.this, LanguageLevel.class);
+                Intent intent = new Intent(LanguageLevel.this, LanguageLevel2.class);
                 intent.putExtra("choice" ,1);
                 startActivity(intent);
             }
@@ -43,7 +43,7 @@ public class LanguageLevel extends AppCompatActivity {
 
                 level1.finish();
 
-                Intent intent = new Intent(LanguageLevel.this, LanguageLevel.class);
+                Intent intent = new Intent(LanguageLevel.this, LanguageLevel2.class);
                 intent.putExtra("choice" ,2);
                 startActivity(intent);
             }
@@ -55,7 +55,7 @@ public class LanguageLevel extends AppCompatActivity {
 
                 level1.finish();
 
-                Intent intent = new Intent(LanguageLevel.this, LanguageLevel.class);
+                Intent intent = new Intent(LanguageLevel.this, LanguageLevel2.class);
                 intent.putExtra("choice" ,3);
                 startActivity(intent);
             }
@@ -67,7 +67,7 @@ public class LanguageLevel extends AppCompatActivity {
 
                 level1.finish();
 
-                Intent intent = new Intent(LanguageLevel.this, LanguageLevel.class);
+                Intent intent = new Intent(LanguageLevel.this, LanguageLevel2.class);
                 intent.putExtra("choice" ,4);
                 startActivity(intent);
             }
