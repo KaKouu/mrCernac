@@ -29,7 +29,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/btBeach"
+        android:background="@drawable/bt_beach"
         android:fontFamily="@font/melon_hunter"
         android:text="Réinitialiser le jeux"
         android:textAlignment="center"
