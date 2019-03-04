@@ -31,15 +31,16 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/bt_beach"
         android:fontFamily="@font/melon_hunter"
-        android:text="Réinitialiser le jeux"
+        android:text="Reinitialiser le jeux"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintVertical_bias="0.459" />
 
     <ImageView
         android:id="@+id/back"

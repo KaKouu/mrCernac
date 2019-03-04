@@ -23,7 +23,7 @@ public class SettingsActivity extends AppCompatActivity {
 
 
         ImageView back = findViewById(R.id.back);
-        Button reinit = findViewById(R.id.reinit);
+        final Button reinit = findViewById(R.id.reinit);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +37,8 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 prefs.setLevel(0);
+                System.out.println(R.drawable.bt_beach_valid);
+                reinit.setBackgroundResource(R.drawable.bt_beach_valid);
             }
         });
 
