@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.project.cernac.mrcernac.utils.Prefs;
 
@@ -22,11 +23,20 @@ public class Home extends AppCompatActivity {
 
 
         Button start = findViewById(R.id.startButton);
+        ImageView option = findViewById(R.id.option);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 chooseLevel(actualLevels);
+            }
+        });
+
+        option.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, SettingsActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -63,6 +73,7 @@ public class Home extends AppCompatActivity {
         }
 
     private void chooseActivity(Class level) {
+
         Intent intent = new Intent(Home.this, level);
         startActivity(intent);
 

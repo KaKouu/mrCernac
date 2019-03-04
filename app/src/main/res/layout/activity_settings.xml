@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_beach"
-    tools:context=".Home">
+    tools:context=".SettingsActivity">
 
     <TextView
-        android:id="@+id/homeTitle"
+        android:id="@+id/optionTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/melon_hunter"
-        android:text="Mr.Cernac"
+        android:text="Settings"
         android:textColor="@android:color/background_dark"
         android:textSize="90sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,56 +22,39 @@
         app:layout_constraintVertical_bias="0.062" />
 
     <Button
-        android:id="@+id/startButton"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
+        android:id="@+id/reinit"
+        android:layout_width="348dp"
+        android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/button"
         android:fontFamily="@font/melon_hunter"
-        android:text="Commencer"
-        android:textSize="36sp"
-        android:textStyle="bold"
+        android:text="Réinitialiser le jeux"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/homeTitle"
-        app:layout_constraintVertical_bias="0.925" />
-
-    <ImageView
-        android:id="@+id/crab"
-        android:layout_width="116dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/app_name"
-        android:rotation="-15"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
-        app:srcCompat="@drawable/cernac_burned" />
+        app:layout_constraintVertical_bias="0.414" />
 
     <ImageView
-        android:id="@+id/option"
-        android:layout_width="47dp"
-        android:layout_height="46dp"
+        android:id="@+id/back"
+        android:layout_width="43dp"
+        android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_menu_preferences" />
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
 </android.support.constraint.ConstraintLayout>

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_crab"
         android:supportsRtl="true"
         android:theme="@style/CernacTheme">
-        <activity android:name=".NarrativeLevel"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".NarrativeLevel" />
         <activity android:name=".LanguageLevel2" />
         <activity android:name=".LanguageLevel" />
         <activity android:name=".IntroductionLevel" />
