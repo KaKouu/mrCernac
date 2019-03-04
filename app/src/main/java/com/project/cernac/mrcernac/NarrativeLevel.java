@@ -16,8 +16,9 @@ public class NarrativeLevel extends AppCompatActivity {
 
     Level level3 = new Level(this);
 
-    ArrayList<String> text = new ArrayList(Arrays.asList("Non je plaisante, pardon pour cette petite blague. J'aime bine m'amuser avec " +
-            "les inconnus.", "Je me présente, je m'appelle Mr.Cernac. Grand roi de la plage.", "test"));
+    ArrayList<String> text = new ArrayList(Arrays.asList("Non je plaisante, pardon pour cette petite blague. J'aime bien m'amuser avec les inconnus.",
+            "Je me présente, je m'appelle Mr.Cernac. Grand roi de la plage.", "Etant donné que tu m'as réveillé, tu dois jouer avec moi.",
+            "On fait un deal, si j'arrive à te faire perdre je pourrais jouer avec toi pour le reste de tes jours.", "Ça te va ?"));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,13 @@ public class NarrativeLevel extends AppCompatActivity {
             public void onClick(View v) {
 
                 crabSpeech.setText(text.get(it[0]));
-                it[0] +=1;
-
+                it[0] += 1;
+                System.out.println(it[0]);
+                if (it[0] >= 5) {
+                    level3.finish();
+                    Intent intent = new Intent(NarrativeLevel.this, AgreeOrAgree.class);
+                    startActivity(intent);
+                }
             }
         });
     }
@@ -47,18 +53,10 @@ public class NarrativeLevel extends AppCompatActivity {
             Intent intent = new Intent(NarrativeLevel.this, Home.class);
             startActivity(intent);
             return false;
-        } else{
+        } else {
             return super.onKeyDown(keyCode, event);
         }
-
-
     }
-
-
-
-
-
-
 
 
 }

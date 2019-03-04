@@ -63,11 +63,11 @@
         app:srcCompat="@drawable/cernac_burned" />
 
     <TextView
-        android:id="@+id/levelBar3"
+        android:id="@+id/levelBar2"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/melon_hunter"
-        android:text="Niveau  3"
+        android:text="Niveau  2"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp"

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_beach"
-    tools:context=".IntroductionLevel" >
+    tools:context=".AgreeOrAgree">
 
     <TextView
-        android:id="@+id/levelBar0"
-        android:layout_width="193dp"
+        android:id="@+id/levelBar4"
+        android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/melon_hunter"
-        android:text="Niveau  0"
+        android:text="Niveau  4"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <ImageView
-        android:id="@+id/crab1"
+        android:id="@+id/crab6"
         android:layout_width="116dp"
         android:layout_height="83dp"
         android:layout_marginStart="8dp"
@@ -34,25 +34,41 @@
         android:rotation="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857"
+        app:layout_constraintVertical_bias="0.86"
         app:srcCompat="@drawable/cernac_burned" />
 
-    <ImageView
-        android:id="@+id/say1"
-        android:layout_width="119dp"
-        android:layout_height="102dp"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="124dp"
+        android:layout_height="85dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:text="Oui ça me va !!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
-        app:srcCompat="@drawable/ic_zzz" />
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="124dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Pas de soucis !!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

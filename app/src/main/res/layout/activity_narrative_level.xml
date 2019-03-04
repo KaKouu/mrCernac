@@ -8,6 +8,21 @@
     tools:context=".NarrativeLevel">
 
     <TextView
+        android:id="@+id/levelBar3"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/melon_hunter"
+        android:text="Niveau  3"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
         android:id="@+id/crabSpeech"
         android:layout_width="297dp"
         android:layout_height="161dp"
@@ -16,7 +31,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="monospace"
-        android:text="NA"
+        android:text="Tu crois quoi que tu vas t'en sortir comme ça ???"
         android:textAlignment="viewStart"
         android:textColor="@color/Black"
         android:textSize="20sp"

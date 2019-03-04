@@ -33,7 +33,7 @@ public class LanguageLevel2 extends AppCompatActivity {
             case 1: question= "Bonjour, pourquoi m'as-tu reveillez ? ";
                     crabSpeech.setText(question);
                     choice1.setText("Pardon...");
-                    choice2.setText("C'est de ma faute...");
+                    choice2.setText("J'ai pas fait exprès ...");
             break;
             case 2: question= "♥☻♣◘•♦3, ♠♣☻T♣♥☺5 ♦◘♦ ♣6♠☺ ♀♦p•◘○♠8 ? ";
                 crabSpeech.setText(question);

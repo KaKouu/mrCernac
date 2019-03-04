@@ -8,7 +8,7 @@
     tools:context=".LanguageLevel">
 
     <TextView
-        android:id="@+id/levelBar2"
+        android:id="@+id/levelBar1"
         android:layout_width="193dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/melon_hunter"
