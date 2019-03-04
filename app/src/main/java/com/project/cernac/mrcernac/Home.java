@@ -35,15 +35,25 @@ public class Home extends AppCompatActivity {
     }
 
     private void chooseLevel(int actualLevels) {
-        actualLevels =0;
+
         switch (actualLevels){
             case 0 :
                 Class<IntroductionLevel> level0 = IntroductionLevel.class;
                 chooseActivity(level0);
                 break;
             case 1:
-
+                Class<LanguageLevel> level1 = LanguageLevel.class;
+                chooseActivity(level1);
                 break;
+            case 2:
+                Class<LanguageLevel2> level2 = LanguageLevel2.class;
+                chooseActivity(level2);
+                break;
+            case 3:
+                Class<NarrativeLevel> level3 = NarrativeLevel.class;
+                chooseActivity(level3);
+                break;
+
             default: System.out.println("ERROR");
                 break;
         }
