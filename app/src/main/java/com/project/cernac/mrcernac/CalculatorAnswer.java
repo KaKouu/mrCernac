@@ -11,14 +11,16 @@ public class CalculatorAnswer extends AppCompatActivity {
 
     Level level6 = new Level(this);
 
-    Intent intent = getIntent();
-
-        int choice = intent.getIntExtra("choice", 1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_answer);
+
+        Intent intent = getIntent();
+
+        int choice = intent.getIntExtra("choice", 1);
+
+
     }
 
     @Override
