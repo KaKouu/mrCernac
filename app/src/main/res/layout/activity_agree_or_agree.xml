@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/cernac_burned" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/choice1"
         android:layout_width="124dp"
         android:layout_height="85dp"
         android:layout_marginStart="8dp"
@@ -57,7 +57,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/choice2"
         android:layout_width="124dp"
         android:layout_height="85dp"
         android:layout_marginStart="8dp"

@@ -9,34 +9,36 @@ import android.widget.Button;
 
 import com.project.cernac.mrcernac.utils.Level;
 
-public class AgreeOrAgree extends AppCompatActivity {
+public class CalculatorLevel extends AppCompatActivity {
 
-    Level level4 = new Level(this);
+    Level level5 = new Level(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agree_or_agree);
+        setContentView(R.layout.activity_calculator_level);
 
+        Button rightAnswer = findViewById(R.id.choice1);
+        Button wrongAnswer = findViewById(R.id.choice2);
 
-
-        Button button1 = findViewById(R.id.choice1);
-        Button button2 = findViewById(R.id.choice2);
-
-        button1.setOnClickListener(new View.OnClickListener() {
+        rightAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                level4.finish();
-                Intent intent = new Intent(AgreeOrAgree.this, NarrativeLevel2.class);
+                level5.finish();
+                Intent intent = new Intent(CalculatorLevel.this, CalculatorAnswer.class);
+
+                intent.putExtra("choice", 1);
                 startActivity(intent);
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        wrongAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                level4.finish();
-                Intent intent = new Intent(AgreeOrAgree.this, NarrativeLevel2.class);
+                level5.finish();
+                Intent intent = new Intent(CalculatorLevel.this, CalculatorAnswer.class);
+
+                intent.putExtra("choice", 2);
                 startActivity(intent);
             }
         });
@@ -46,7 +48,7 @@ public class AgreeOrAgree extends AppCompatActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            Intent intent = new Intent(AgreeOrAgree.this, Home.class);
+            Intent intent = new Intent(CalculatorLevel.this, Home.class);
             startActivity(intent);
             return false;
         } else {
