@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_crab"
         android:supportsRtl="true"
         android:theme="@style/CernacTheme">
-        <activity android:name=".HowOldAreYou"></activity>
+        <activity android:name=".NarrativeLevel3"></activity>
+        <activity android:name=".HowOldAreYou" />
         <activity android:name=".CalculatorAnswer" />
         <activity android:name=".CalculatorLevel" />
         <activity android:name=".NarrativeLevel2" />

@@ -60,6 +60,10 @@ public class CalculatorAnswer extends AppCompatActivity {
                         }
                     }
                 });
+
+            default:
+                System.out.println("ERROR");
+                break;
         }
 
     }
