@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.project.cernac.mrcernac.utils.Level;
 import com.project.cernac.mrcernac.utils.Prefs;
 
 public class LoadingLevel extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class LoadingLevel extends AppCompatActivity {
     private static final int STOP = 17;
     private int actualSecond = STOP;
 
-
+    Level levelX = new Level(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +109,7 @@ public class LoadingLevel extends AppCompatActivity {
         progressBar2.setProgress(nb*6,true);
 
         if (nb == 100){
+            levelX.finish();
         Intent next = new Intent( LoadingLevel.this, LoadingLevel.class);
         startActivity(next);}
 

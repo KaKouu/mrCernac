@@ -26,8 +26,6 @@ public class Prefs {
     }
 
 
-
-
     public void setLevel(int level){
         this.editor.putInt(ACTUAL_LEVEL, level);
         editor.commit();
