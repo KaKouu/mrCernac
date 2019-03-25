@@ -38,7 +38,8 @@ public class CalculatorAnswer extends AppCompatActivity {
                     public void onClick(View v) {
 
                         level6.finish();
-                        Intent intent = new Intent(CalculatorAnswer.this, HowOldAreYou.class);
+                        Intent intent = new Intent(CalculatorAnswer.this, HowOldAreYou.class); // NIVEAU NORMAL
+                       // Intent intent = new Intent(CalculatorAnswer.this, LoadingLevel.class); //NIVEAU TEST
                         startActivity(intent);
                     }
 
