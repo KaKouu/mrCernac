@@ -13,7 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.project.cernac.mrcernac.utils.Level;
-import com.project.cernac.mrcernac.utils.Prefs;
 
 public class LoadingLevel extends AppCompatActivity {
 
@@ -44,7 +43,7 @@ public class LoadingLevel extends AppCompatActivity {
         winBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTxtLife(textView,actualSecond,progressBar2);
+                setBar(textView,actualSecond,progressBar2);
                 actualSecond+=1;
 
             }
@@ -74,7 +73,7 @@ public class LoadingLevel extends AppCompatActivity {
 
             int nbL = nb + 1;
 
-            setTxtLife(txt, nbL, progressBar2);
+            setBar(txt, nbL, progressBar2);
 
             secondsRemaining = timerLengthSecond;
             txt.setText(nb + "%");
@@ -104,7 +103,7 @@ public class LoadingLevel extends AppCompatActivity {
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
-    private void setTxtLife(TextView txt, int nb, ProgressBar progressBar2){
+    private void setBar(TextView txt, int nb, ProgressBar progressBar2){
         txt.setText(nb+"%");
         progressBar2.setProgress(nb*6,true);
 
