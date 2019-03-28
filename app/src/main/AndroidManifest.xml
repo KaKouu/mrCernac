@@ -3,7 +3,7 @@
     package="com.project.cernac.mrcernac">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_crab"
         android:supportsRtl="true"
         android:theme="@style/CernacTheme">
-        <activity android:name=".VibrateLevel"></activity>
+        <activity android:name=".SoundLevel"></activity>
+        <activity android:name=".VibrateLevel" />
         <activity android:name=".LoadingLevel" />
         <activity android:name=".NarrativeLevel3" />
         <activity android:name=".HowOldAreYou" />
