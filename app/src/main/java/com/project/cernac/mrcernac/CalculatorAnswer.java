@@ -36,10 +36,9 @@ public class CalculatorAnswer extends AppCompatActivity {
                 crabSpeech.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                         level6.finish();
                         //Intent intent = new Intent(CalculatorAnswer.this, HowOldAreYou.class); // NIVEAU NORMAL
-                       Intent intent = new Intent(CalculatorAnswer.this, VibrateLevel.class); //NIVEAU TEST
+                        Intent intent = new Intent(CalculatorAnswer.this, BrightnessLevel.class); //NIVEAU TEST
                         startActivity(intent);
                     }
 
@@ -56,7 +55,7 @@ public class CalculatorAnswer extends AppCompatActivity {
                         System.out.println(it[0]);
                         if (it[0] >= 2) {
                             level6.finish();
-                            Intent intent = new Intent(CalculatorAnswer.this, HowOldAreYou.class);
+                            Intent intent = new Intent(CalculatorAnswer.this, BrightnessLevel.class);
                             startActivity(intent);
                         }
                     }

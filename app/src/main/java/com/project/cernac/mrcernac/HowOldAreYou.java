@@ -3,7 +3,6 @@ package com.project.cernac.mrcernac;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -27,9 +26,9 @@ public class HowOldAreYou extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 level7.finish();
-                Intent intent = new Intent(HowOldAreYou.this, NarrativeLevel3.class);
-                int age = Integer.parseInt(userAge.getText().toString());
+                Intent intent = new Intent(HowOldAreYou.this, HowOldAreYouReaction.class);
 
+                int age = Integer.parseInt(userAge.getText().toString());
                 if (age <= 5 || age >= 100) {
                     intent.putExtra("age", 1);
                     startActivity(intent);
