@@ -10,7 +10,7 @@ import com.project.cernac.mrcernac.utils.Level;
 public class GyroLevel extends AppCompatActivity {
 
 
-    Level levelX = new Level(this);
+    Level level12 = new Level(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,8 @@ public class GyroLevel extends AppCompatActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        levelX.finish();
-        Intent intent = new Intent(GyroLevel.this, Home.class);
+        level12.finish();
+        Intent intent = new Intent(GyroLevel.this, BrightnessLevel.class);
         startActivity(intent);
 
         super.onRestoreInstanceState(savedInstanceState);

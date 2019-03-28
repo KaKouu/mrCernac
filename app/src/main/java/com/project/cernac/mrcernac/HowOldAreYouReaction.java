@@ -42,7 +42,7 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                         System.out.println(it[0]);
                         if (it[0] >= 2) {
                             level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, BrightnessLevel.class);
+                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
                             startActivity(intent);
                         }
                     }
@@ -59,7 +59,7 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                         System.out.println(it[0]);
                         if (it[0] >= 2) {
                             level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, BrightnessLevel.class);
+                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
                             startActivity(intent);
                         }
                     }
@@ -76,7 +76,7 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                         System.out.println(it[0]);
                         if (it[0] >= 2) {
                             level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, BrightnessLevel.class);
+                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
                             startActivity(intent);
                         }
                     }
@@ -93,7 +93,7 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                         System.out.println(it[0]);
                         if (it[0] >= 2) {
                             level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, BrightnessLevel.class);
+                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
                             startActivity(intent);
                         }
                     }

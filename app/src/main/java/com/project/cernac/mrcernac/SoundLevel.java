@@ -10,7 +10,7 @@ import com.project.cernac.mrcernac.utils.Level;
 
 public class SoundLevel extends AppCompatActivity {
 
-    Level levelX = new Level(this);
+    Level level10 = new Level(this);
     int rep=0;
 
     @Override
@@ -45,8 +45,8 @@ public class SoundLevel extends AppCompatActivity {
         coco.setY(coco.getY()+10);
 
         if (rep>=100){
-            levelX.finish();
-            Intent intent = new Intent(SoundLevel.this, Home.class);
+            level10.finish();
+            Intent intent = new Intent(SoundLevel.this, VibrateLevel.class);
             startActivity(intent);
         }
         rep+=1;

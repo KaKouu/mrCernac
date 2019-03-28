@@ -83,7 +83,7 @@
         android:layout_width="193dp"
         android:layout_height="44dp"
         android:fontFamily="@font/melon_hunter"
-        android:text="Niveau  ?"
+        android:text="Niveau  11"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp"

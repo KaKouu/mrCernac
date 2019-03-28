@@ -2,9 +2,7 @@ package com.project.cernac.mrcernac;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.CountDownTimer;
-import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,15 +10,13 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.project.cernac.mrcernac.utils.Level;
 
 public class VibrateLevel extends AppCompatActivity {
 
-    Level levelX = new Level(this);
+    Level level11 = new Level(this);
 
 
     private long SECONDS_FOR_ONE_LIFE = 1L;
@@ -55,7 +51,7 @@ public class VibrateLevel extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(VibrateLevel.this,VibrateLevel.class);
+
 
                 if (anwserVib.getText().toString().matches("")){                                               ///ICI
                     crabSpeech.setText("Attention, tu as oublié de mettre une réponse..enfin j'espère pour toi.");
@@ -68,7 +64,8 @@ public class VibrateLevel extends AppCompatActivity {
                     } else if (nbVib != 1){
                         crabSpeech.setText("C'est FAUX ... Reessaye avant que je te mange....  ☺");
                     } else {
-                        levelX.finish();
+                        level11.finish();
+                        Intent intent = new Intent(VibrateLevel.this,GyroLevel.class);
                         startActivity(intent);
                     }
                 }
