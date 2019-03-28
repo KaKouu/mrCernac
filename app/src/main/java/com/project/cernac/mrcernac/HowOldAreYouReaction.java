@@ -16,9 +16,6 @@ public class HowOldAreYouReaction extends AppCompatActivity {
 
     Level level8 = new Level(this);
 
-    ArrayList<String> text = new ArrayList(Arrays.asList("Bref, maintenant je vais te faire une devinette",
-            "Attention seules les personnes dont l'intelligence dépasse celle des huîtres sont arrivées à trouver la solution"));
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,15 +33,9 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                 crabSpeech.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        crabSpeech.setText(text.get(it[0]));
-                        it[0] += 1;
-                        System.out.println(it[0]);
-                        if (it[0] >= 2) {
-                            level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
-                            startActivity(intent);
-                        }
+                        level8.finish();
+                        Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
+                        startActivity(intent);
                     }
                 });
                 break;
@@ -53,15 +44,9 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                 crabSpeech.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        crabSpeech.setText(text.get(it[0]));
-                        it[0] += 1;
-                        System.out.println(it[0]);
-                        if (it[0] >= 2) {
-                            level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
-                            startActivity(intent);
-                        }
+                        level8.finish();
+                        Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
+                        startActivity(intent);
                     }
                 });
                 break;
@@ -70,15 +55,9 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                 crabSpeech.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        crabSpeech.setText(text.get(it[0]));
-                        it[0] += 1;
-                        System.out.println(it[0]);
-                        if (it[0] >= 2) {
-                            level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
-                            startActivity(intent);
-                        }
+                        level8.finish();
+                        Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
+                        startActivity(intent);
                     }
                 });
                 break;
@@ -87,15 +66,9 @@ public class HowOldAreYouReaction extends AppCompatActivity {
                 crabSpeech.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        crabSpeech.setText(text.get(it[0]));
-                        it[0] += 1;
-                        System.out.println(it[0]);
-                        if (it[0] >= 2) {
-                            level8.finish();
-                            Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
-                            startActivity(intent);
-                        }
+                        level8.finish();
+                        Intent intent = new Intent(HowOldAreYouReaction.this, LoadingLevel.class);
+                        startActivity(intent);
                     }
                 });
                 break;
