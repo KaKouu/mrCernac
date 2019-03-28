@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_crab"
         android:supportsRtl="true"
         android:theme="@style/CernacTheme">
-        <activity android:name=".SoundLevel"></activity>
+        <activity android:name=".End"></activity>
+        <activity android:name=".GyroLevel" />
+        <activity android:name=".SoundLevel" />
         <activity android:name=".VibrateLevel" />
         <activity android:name=".LoadingLevel" />
         <activity android:name=".NarrativeLevel3" />
