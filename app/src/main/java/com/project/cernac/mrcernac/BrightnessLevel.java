@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,15 +36,28 @@ public class BrightnessLevel extends AppCompatActivity {
 
 
         TextView text = findViewById(R.id.crabSpeech);
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BrightnessLevel.this, End.class);
+                startActivity(intent);
+            }
+        });
+
         SeekBar seekBar = findViewById(R.id.seekBar);
 
         seekBar.setMax(255);
         seekBar.setProgress(getBrightness());
 
+        getPermission();
+
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-
+                if (fromUser && success){
+                    setBrightness(progress);
+                }
             }
 
             @Override
@@ -53,7 +67,9 @@ public class BrightnessLevel extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
+                if (!success){
+                    Toast.makeText(BrightnessLevel.this, "Permission not granted!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -71,7 +87,7 @@ public class BrightnessLevel extends AppCompatActivity {
     }
 
     private int getBrightness(){
-        int brightness = 100;
+        int brightness = 0;
         try{
             ContentResolver contentResolver = getApplicationContext().getContentResolver();
             brightness = Settings.System.getInt(contentResolver, Settings.System.SCREEN_BRIGHTNESS);
@@ -83,28 +99,24 @@ public class BrightnessLevel extends AppCompatActivity {
 
     private void getPermission(){
         boolean value;
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-            value = Settings.System.canWrite(getApplicationContext());
-            if (value){
-                success = true;
-            } else{
-                Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
-                intent.setData(Uri.parse("package:" + getApplicationContext().getPackageName()));
-                startActivityForResult(intent, 1000);
-            }
+        value = Settings.System.canWrite(getApplicationContext());
+        if (value){
+            success = true;
+        } else{
+            Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS);
+            intent.setData(Uri.parse("package:" + getApplicationContext().getPackageName()));
+            startActivityForResult(intent, 1000);
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1000){
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-                boolean value = Settings.System.canWrite(getApplicationContext());
-                if (value){
-                    success = true;
-                } else {
-                    Toast.makeText(this, "Permission not granted", Toast.LENGTH_SHORT).show();
-                }
+            boolean value = Settings.System.canWrite(getApplicationContext());
+            if (value){
+                success = true;
+            } else {
+                Toast.makeText(this, "Permission not granted", Toast.LENGTH_SHORT).show();
             }
         }
     }

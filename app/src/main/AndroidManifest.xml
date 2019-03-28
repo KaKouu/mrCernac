@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +16,11 @@
         android:theme="@style/CernacTheme">
         <activity android:name=".End"></activity>
         <activity android:name=".GyroLevel" />
+        <activity android:name=".BrightnessLevel" />
         <activity android:name=".SoundLevel" />
         <activity android:name=".VibrateLevel" />
         <activity android:name=".LoadingLevel" />
-        <activity android:name=".NarrativeLevel3" />
+        <activity android:name=".HowOldAreYouReaction" />
         <activity android:name=".HowOldAreYou" />
         <activity android:name=".CalculatorAnswer" />
         <activity android:name=".CalculatorLevel" />
