@@ -1,6 +1,7 @@
 package com.project.cernac.mrcernac;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,6 +22,10 @@ public class Home extends AppCompatActivity {
         prefs = new Prefs(this);
         final int actualLevels = prefs.getLevel();
 
+        MediaPlayer player = MediaPlayer.create(this, R.raw.ukulele);
+        player.setLooping(true);
+
+        player.start();
 
         Button start = findViewById(R.id.startButton);
         ImageView option = findViewById(R.id.option);

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.webkit.WebView;
 
 public class End extends AppCompatActivity {
 
@@ -11,6 +12,10 @@ public class End extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
+
+        WebView simpleWebView=(WebView) findViewById(R.id.weeb);
+// specify the url of the web page in loadUrl function
+        simpleWebView.loadUrl("https://lecrabeinfo.net/");
     }
 
     @Override

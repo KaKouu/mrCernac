@@ -10,13 +10,13 @@
     <TextView
         android:id="@+id/crabSpeech6"
         android:layout_width="288dp"
-        android:layout_height="134dp"
+        android:layout_height="181dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="monospace"
-        android:text="J'abandonne tu es trés fort. Merci d'avoir joué. SI tu veux recommencer vas dans les paramètres. À plus."
+        android:text="J'abandonne tu es trés fort. Merci d'avoir joué. SI tu veux recommencer vas dans les paramètres.Tu peux aussi aller sur mon site internet ! À plus."
         android:textAlignment="viewStart"
         android:textColor="@color/Black"
         android:textSize="20sp"
@@ -25,7 +25,7 @@
         app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.481" />
 
     <ImageView
         android:id="@+id/crab14"
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89"
+        app:layout_constraintVertical_bias="0.71"
         app:srcCompat="@drawable/cernac_burned" />
 
     <TextView
@@ -60,4 +60,17 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.179" />
+
+    <WebView
+        android:id="@+id/weeb"
+        android:layout_width="395dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crab14" />
 </android.support.constraint.ConstraintLayout>
