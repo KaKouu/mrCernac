@@ -54,7 +54,7 @@ public class CalculatorAnswer extends AppCompatActivity {
                         System.out.println(it[0]);
                         if (it[0] >= 2) {
                             level6.finish();
-                            Intent intent = new Intent(CalculatorAnswer.this, BrightnessLevel.class);
+                            Intent intent = new Intent(CalculatorAnswer.this, HowOldAreYou.class);
                             startActivity(intent);
                         }
                     }
