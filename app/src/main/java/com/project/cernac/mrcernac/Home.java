@@ -25,6 +25,7 @@ public class Home extends AppCompatActivity {
         MediaPlayer player = MediaPlayer.create(this, R.raw.ukulele);
         player.setLooping(true);
 
+        player.stop();
         player.start();
 
         Button start = findViewById(R.id.startButton);
