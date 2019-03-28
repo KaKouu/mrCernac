@@ -24,6 +24,7 @@ public class Home extends AppCompatActivity {
 
         MediaPlayer player = MediaPlayer.create(this, R.raw.ukulele);
         player.setLooping(true);
+        System.out.println(actualLevels);
 
         player.stop();
         player.start();
@@ -68,6 +69,50 @@ public class Home extends AppCompatActivity {
             case 3:
                 Class<NarrativeLevel> level3 = NarrativeLevel.class;
                 chooseActivity(level3);
+                break;
+            case 4:
+                Class<AgreeOrAgree> level4 = AgreeOrAgree.class;
+                chooseActivity(level4);
+                break;
+            case 5:
+                Class<NarrativeLevel2> level5 = NarrativeLevel2.class;
+                chooseActivity(level5);
+                break;
+            case 6:
+                Class<CalculatorAnswer> level6 = CalculatorAnswer.class;
+                chooseActivity(level6);
+                break;
+            case 7:
+                Class<HowOldAreYou> level7 = HowOldAreYou.class;
+                chooseActivity(level7);
+                break;
+            case 8:
+                Class<HowOldAreYou> level71 = HowOldAreYou.class;
+                chooseActivity(level71);
+                break;
+            case 9:
+                Class<LoadingLevel> level9 = LoadingLevel.class;
+                chooseActivity(level9);
+                break;
+            case 10:
+                Class<SoundLevel> level10 = SoundLevel.class;
+                chooseActivity(level10);
+                break;
+            case 11:
+                Class<VibrateLevel> level11 = VibrateLevel.class;
+                chooseActivity(level11);
+                break;
+            case 12:
+                Class<GyroLevel> level12 = GyroLevel.class;
+                chooseActivity(level12);
+                break;
+            case 13:
+                Class<BrightnessLevel> level13 = BrightnessLevel.class;
+                chooseActivity(level13);
+                break;
+            case 14:
+                Class<End> level14 = End.class;
+                chooseActivity(level14);
                 break;
 
             default: System.out.println("ERROR");

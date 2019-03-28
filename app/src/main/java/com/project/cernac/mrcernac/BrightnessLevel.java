@@ -24,7 +24,7 @@ import java.util.Set;
 
 public class BrightnessLevel extends AppCompatActivity {
 
-    Level level9 = new Level(this);
+    Level level13 = new Level(this);
 
     boolean success = false;
 
@@ -40,6 +40,7 @@ public class BrightnessLevel extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                level13.finish();
                 Intent intent = new Intent(BrightnessLevel.this, End.class);
                 startActivity(intent);
             }
